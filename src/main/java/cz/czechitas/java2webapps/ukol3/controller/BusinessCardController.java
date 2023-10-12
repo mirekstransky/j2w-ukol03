@@ -8,11 +8,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
-/**
- * Kontroler obsluhující zobrazování vizitek.
- */
 @Controller
-public class VizitkaController {
+public class BusinessCardController {
   private final List<Members> listMembers = List.of(
           new Members("Tony","Tlustý","Springfieldská mafie",null,null,"tlusty.tony@gangster.com","893 095 111","www.tlustytony.com", "Šéf"),
           new Members("Frankie","Práskač","Springfieldská mafie","Greenside Drive 2201","Springfield","frankie.praskac@gangster.com","893 095 247","www.praskac.com", "Práskač"),
@@ -33,9 +30,6 @@ public class VizitkaController {
     modelAndView.addObject("memberDetail", listMembers.get(id));
     modelAndView.addObject("memberNum", id);
 
-
     return modelAndView;
   }
-
-
 }

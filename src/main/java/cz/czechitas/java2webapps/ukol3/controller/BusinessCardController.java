@@ -16,7 +16,8 @@ public class BusinessCardController {
           new Members("Louie","Střelec","Springfieldská mafie","Greenside Drive 2201","Springfield","louie.strelec@gangster.com","893 095 147","www.strelec.com", "Gangster"),
           new Members("Johnny","Nemluva","Springfieldská mafie","Greenside Drive 2201","Springfield","johny.nemluva@gangster.com","893 095 369","www.nemluva.com", "Mluvčí"),
           new Members("Bill","Legs",null,null,null,null,null,null,null),
-          new Members(null,"Bezejmenný","Springfieldská mafie","Greenside Drive 2201","Springfield","bezejmenny@gangster.com","893 095 111","www.bezejmenny.com", "Nic")
+          new Members(null,"Bezejmenný","Springfieldská mafie","Greenside Drive 2201","Springfield","bezejmenny@gangster.com","893 095 111","www.bezejmenny.com", "Nic"),
+          new Members()
   );
   @GetMapping("/")
   public ModelAndView listOfMembers() {

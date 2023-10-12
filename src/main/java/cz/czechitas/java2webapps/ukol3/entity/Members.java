@@ -14,8 +14,6 @@ public class Members {
 
 
     public Members() {
-//       this(null,null,null,null
-//               ,null,null,null,null);
     }
 
     public Members(String name, String surname, String company, String street, String postCodeTown,
@@ -78,7 +76,6 @@ public class Members {
             return street + ", " + postCodeTown;
         }
     }
-
 
     public String getEmail() {
         return email;

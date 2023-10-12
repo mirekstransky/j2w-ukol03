@@ -1,20 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 html {
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
 body {
-    font: 10pt 'Raleway', sans-serif;
+    font: 10pt "Raleway", sans-serif;
     color: black;
     margin: 0;
     min-height: 100vh;
-    background: white url(https://source.unsplash.com/uXtq8xGUX5U) center center/cover no-repeat;
-}
+    background: white url(https://static1.srcdn.com/wordpress/wp-content/uploads/2022/12/the_springfield_skyline_in_the_simpsons.jpg)
+    center center/cover no-repeat;
+ }
 
 a {
     color: black;
@@ -39,6 +43,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 20px;
+    position: relative;
 }
 
 .jmeno {
@@ -79,3 +85,33 @@ a {
     margin: 1em;
     box-shadow: 5px 5px 10px black;
 }
+
+.mapa-error{
+    position: relative;
+    border:none;
+    box-shadow:none;
+}
+
+.foto {
+    position: absolute;
+    border-radius: 50%;
+    width: 75px;
+    border: 1px solid black;
+}
+.status {
+    font-size: 20px;
+    position: absolute;
+    font-family: monospace;
+    text-transform: uppercase;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid black;
+    top: -10px;
+    right: -20px;
+    background-color: yellow;
+}
+.mapa-neni{
+    background-color: orangered;
+}
+
